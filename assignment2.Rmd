@@ -40,7 +40,7 @@ Partners8 <- Egoalt8 %>%
         filter(h_relationship_dv==1|h_relationship_dv==2) %>%
         select(pidp,apidp,h_hidp,h_relationship_dv,h_sex,h_asex)
 
-#note: there is no variable called h_esex in the data set so i used h_sex which 
+#note: there is no variable called h_esex in the data set so I used h_sex
 ```
 
 Each couple now appears in the data twice: 1) with one partner as ego and the other as alter, 2) the other way round. Now we will only focus on heterosexual couples, and keep one observation per couple with women as egos and men as their alters.
@@ -136,7 +136,7 @@ TableRace %>%
         # create a new variable with the total number of women by race
         mutate(total=sum(n)) %>% 
         # create a new variable with the required probabilities 
-        mutate(perc = n / total)
+        mutate(prob = n / total)
 ```
 
 ## Join with household data and calculate mean and median number of children by ethnic group (30 points)
@@ -189,6 +189,6 @@ table.eth
 
 4. Interpretation
 
-White British households have the lowest number of children, namely 0.56 on average (one obviously cannot have "half a child" so, looking at the median, these couple usually have 0 children). 
-Indian households have an average of 0.95 or 1 child and Pakistanis have the highest number of children per household: nearly 2 on average. 
-These findings indicate stark differences between the number of children different ethnic groups get. Common wisedom refers to cultural differences and higher fertility rates for minorities. Minority populations are also younger than Whites, so the findings would reflect demographic trends. Another factor that could influence these results is that multiple Indian or Pakistani families live together in a "big household". 
+White British households have the lowest number of children, namely 0.56 on average (one obviously cannot have "half a child" so, looking at the median, these households usually have 0 children). 
+Indian households have an average of 0.95 (or 1) child and Pakistanis have the highest number of children per household: nearly 2 on average. 
+These findings indicate quite stark differences between the number of children different ethnic groups get. Common wisedom refers to cultural differences and higher fertility rates for minorities. Minority populations are also younger than Whites, so the findings would reflect demographic trends. Another factor that could influence these results is that multiple Indian or Pakistani families live together in a "big household". 
